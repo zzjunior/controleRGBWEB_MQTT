@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+  }
+section #control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+  
+  #colorControl {
+    width: 300px;
+    margin: auto;
+  }
+  
+  #colorPreview {
+    height: 100px;
+    margin-top: 20px;
+    border: 1px solid #ced4da;
+  }
+  
