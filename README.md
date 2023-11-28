@@ -14,7 +14,7 @@ Para isso foi criado uma página web com um modele de "Controle" de cores RGB, c
  - A ultima função configura usa as váriaveis de dados do MQTT para enviar o objeto JSON fazendo um publish no host e tópico MQTT configurado.
 
 <details>
- <summary>Usamos</summary>
+ <summary>O que me ajudou?</summary>
 
  [Biblioteca Paho - JS](https://www.hivemq.com/article/mqtt-client-library-encyclopedia-paho-js/)
 
