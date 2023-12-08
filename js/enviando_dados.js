@@ -19,35 +19,53 @@ atualizaCores();
 
 // Depois envia os dados para o servidor e tópico MQTT
 
-function publishCoresJSON() {
-  var redValue = document.getElementById('redRange').value;
-  var greenValue = document.getElementById('greenRange').value;
-  var blueValue = document.getElementById('blueRange').value;
+//function publishCoresJSON() {
+ // var redValue = document.getElementById('redRange').value;
+  //var greenValue = document.getElementById('greenRange').value;
+  //var blueValue = document.getElementById('blueRange').value;
 // criando objeto JSON
-  var colorData = {
-    red: redValue,
-    green: greenValue,
-    blue: blueValue
-  };
+  // var colorData = {
+    // red: redValue,
+    // green: greenValue,
+    // blue: blueValue
+  //  };
+//}
 
-  //dados MQTT var client = new Paho.MQTT.Client("host", porta, "clientId");
-// Conectando com o MQTT e enviando os dados em formato
-  client.connect({
-    onSuccess: function () {
-      var topic = "CorRGBJSON";
-      var message = JSON.stringify(colorData);
-      var qos = 0;
+// conexão mqtt lar ect
 
-      var message = new Paho.MQTT.Message(message);
-      message.destinationName = topic;
-      message.qos = qos;
-
-      client.send(message);
-
-      // agente pode manter ativo sempre atualizando client.disconnect();
-    },
-    onFailure: function (message) {
-      console.log("Erro ao conectar: " + message.errorMessage);
-    }
-  });
+const clientId = 'mqttjs_' + Math.random().toString(16).substr(2, 8)
+//const host = 'wss://broker.emqx.io:8084/mqtt'
+const host = 'wss://mqtt.ect.ufrn.br:8083/mqtt'
+const publishTopic = 'teste'
+var ledIsOn = false
+var msg = "Cores da página web"+document.getElementById('redRange').value+" = Vermelhor";
+const options = {
+  keepalive: 60,
+  clientId: clientId,
+  protocolId: 'MQTT',
+  protocolVersion: 4,
+  clean: true,
+  reconnectPeriod: 1000,
+  connectTimeout: 30 * 1000,
+  username: "mqtt",
+  password: "lar_mqtt",
+  will: {
+    topic: 'teste',
+    payload: 'Connection Closed abnormally..!',
+    qos: 0,
+    retain: false
+  }
 }
+console.log('Connecting mqtt client')
+const client = mqtt.connect(host, options)
+client.on('error', err => {
+  console.log('Connection error: ', err)
+  client.end()
+})
+client.on('reconnect', () => {
+  console.log('Reconnecting...')
+})
+
+client.on('connect', function () {
+  console.log('Conectado ao servidor MQTT')
+})
