@@ -27,3 +27,22 @@ section #control {
     border: 1px solid #ced4da;
   }
   
+  #alerta-de-envio {
+    margin-top: -30rem;
+    display: none;
+    width: 70%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Inicialmente transparente */
+    animation: fadeIn .7s ease-in-out forwards; /* Animação de 1 segundo com easing */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
