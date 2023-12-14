@@ -2,11 +2,6 @@
 # PROJETO FINAL DE IOT - INTERNET DAS COISAS
 ## Disciplina da ECT - UFRN
 ###### Professor Orivaldo
-### Alunos
-- José Ilson Dos Santos Júnior
-- 
--
--
 
 ## Resumo do projeto
 O intuito do projeto é criar um controlador RGB de uma ou várias leds de um microcontrolador ESP.
