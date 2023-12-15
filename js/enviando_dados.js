@@ -16,7 +16,7 @@ atualizaCores();
 // conexão mqtt lar ect
 
 const clientId = 'mqttjs_' + Math.random().toString(16).substr(2, 8)
-const host = 'mqtt://mqtt.ect.ufrn.br:1883'
+const host = 'mqtt.ect.ufrn.br:1883'
 const publishTopic = 'teste';
 
 const options = {
