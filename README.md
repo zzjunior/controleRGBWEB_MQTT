@@ -102,7 +102,7 @@ Foi utilizado um simulador Web do MQTT devido à ocorrer somente uma vez na sema
 <details>
  <summary>Fontes base Utilizadas</summary>
 
- [Biblioteca MQTT.JS]([https://www.hivemq.com/article/mqtt-client-library-encyclopedia-paho-js](https://github.com/mqttjs)/)
+ [Biblioteca MQTT.JS](https://www.hivemq.com/article/mqtt-client-library-encyclopedia-paho-js](https://github.com/mqttjs)/)
 
  [Bootstrap](https://getbootstrap.com/docs/5.3)
 
@@ -111,4 +111,8 @@ Foi utilizado um simulador Web do MQTT devido à ocorrer somente uma vez na sema
  [W3 Schools - JS](https://www.w3schools.com/jsrEF/default.asp)
 
  [Repositório de IOT - Professor Orivaldo](https://github.com/orivaldosantana/ura_html_panel/blob/main/test_mqtt_js.html)
+
+ [Micropython Doc](https://docs.micropython.org/en/latest/)
+
+ [Wokwi](https://wokwi.com)
 </details>
