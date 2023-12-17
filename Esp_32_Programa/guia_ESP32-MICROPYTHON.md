@@ -1,4 +1,6 @@
 # Guia sobre o código Código!
+Aqui estão os arquivos e seu papel no código, juntamente de alguns trechos importantes.
+...Lembrando que as conexões e códigos relacionados ao simulador Wokwi, só devem ser utilizados no caso de estar usando o simulador!
 
 #### [`boot.py:`](https://github.com/zzjunior/controleRGBWEB_MQTT/edit/main/Esp_32_Programa/boot.py) 
 ###### Responsavel por dar load nas bibliotecas e conectar no wifi no caso de estar usando o simulador
