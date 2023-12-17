@@ -47,4 +47,6 @@ from umqttsimple import MQTTClient
 
 #### [`diagram.json:`](https://github.com/zzjunior/controleRGBWEB_MQTT/edit/main/Esp_32_Programa/diagram.json:) 
 ###### Diagrama das peças usadas no Wokwi !Apenas usar caso for usar no [Wokwi](https://wokwi.com/)!
+Diagrama padrão em `JSON` gerado no Wokwi, com as informações em objeto do que foi utilizado no simulador ESP
+
 
