@@ -38,6 +38,13 @@ client = MQTTClient(CLIENT_ID, BROKER_URL, BROKER_PORT, BROKER_USER, BROKER_PASS
 ~~~~
 #### [`umqttsimple.py:`](https://github.com/zzjunior/controleRGBWEB_MQTT/edit/main/Esp_32_Programa/umqttsimple.py) 
 ###### Biblioteca umqtt_simple usada para manipular o broker MQTT
+Biblioteca responsável pelos códigos de manipulação do MQTT
+Importando ela no boot.py
+~~~~python
+from umqttsimple import MQTTClient
+~~~~
+
+
 #### [`diagram.json:`](https://github.com/zzjunior/controleRGBWEB_MQTT/edit/main/Esp_32_Programa/diagram.json:) 
 ###### Diagrama das peças usadas no Wokwi !Apenas usar caso for usar no [Wokwi](https://wokwi.com/)!
 
