@@ -95,7 +95,8 @@ console.log('Cores enviadas:', msg);
 
 # ESP32
 ### Códigos e configurações de Sicronização com à Página Web
->>> #### [Esp_32_Programa](https://github.com/zzjunior/controleRGBWEB_MQTT/blob/main/Esp_32_Programa/guia_ESP32-MICROPYTHON.md)
+> #### [Esp_32_Programa](https://github.com/zzjunior/controleRGBWEB_MQTT/blob/main/Esp_32_Programa/guia_ESP32-MICROPYTHON.md)
+Foi utilizado um simulador Web do MQTT devido à ocorrer somente uma vez na semana, e todos os alunos do Grupo deste projeto terem outros compromissos, impossibilitando a ida a UFRN.
 
 
 <details>
