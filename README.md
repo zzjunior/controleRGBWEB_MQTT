@@ -6,9 +6,9 @@
 ## Resumo do projeto
 O intuito do projeto é criar um controlador RGB de uma ou várias leds de um microcontrolador ESP.
 
-Para isso foi criado uma página web com um modele de "Controle" de cores RGB, com tela de visualização.
+Para isso foi criado uma página web com um "Controle" de cores RGB, com tela de visualização.
 
- - À página reconhece ops valores das cores graças a combinação do `HTML`, ``JAVA SCRITP``, onde é utilizada uma função dentro do arquivo [`enviando_dados.js`](https://github.com/zzjunior/controleRGBWEB_MQTT/blob/main/js/enviando_dados.js) onde são atualizadas as cores de acordo com os valores dos formulários ``HTML``.
+ - À página reconhece os valores das cores graças a combinação do `HTML`, ``JAVA SCRITP``, onde é utilizada uma função dentro do arquivo [`enviando_dados.js`](https://github.com/zzjunior/controleRGBWEB_MQTT/blob/main/js/enviando_dados.js) onde são atualizadas as cores de acordo com os valores dos formulários ``HTML``.
 ###### atualizaCores
  ~~~~javascript
 function atualizaCores() {
